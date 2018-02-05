@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5yY-vI-E2R">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -55,6 +55,9 @@
                         <viewLayoutGuide key="safeArea" id="ktM-ky-QGb"/>
                     </view>
                     <navigationItem key="navigationItem" id="Vni-Cw-8hr"/>
+                    <connections>
+                        <outlet property="firstLabel" destination="mM6-B6-Uk4" id="idK-Bl-4Ga"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3LR-6I-ZOq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,7 +85,7 @@
         <scene sceneID="BGc-sG-lOh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pXa-k5-fWk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="1Tv-LO-euJ"/>
+                    <tabBarItem key="tabBarItem" title="Item 1" image="about" id="1Tv-LO-euJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kro-4E-Wey">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -101,7 +104,7 @@
         <scene sceneID="1yX-wo-BEF">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mj6-eB-HBI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="I65-QR-GGT"/>
+                    <tabBarItem key="tabBarItem" title="Item 2" image="face_ID" id="I65-QR-GGT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oZ9-lf-cVt">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -117,4 +120,8 @@
             <point key="canvasLocation" x="168" y="241.97901049475263"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="about" width="30" height="30"/>
+        <image name="face_ID" width="30" height="30"/>
+    </resources>
 </document>
