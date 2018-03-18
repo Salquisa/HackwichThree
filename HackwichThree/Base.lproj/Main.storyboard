@@ -26,7 +26,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dha-d9-efV">
-                                <rect key="frame" x="139" y="322" width="42" height="21"/>
+                                <rect key="frame" x="29" y="322" width="263" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -48,8 +48,7 @@
                     <navigationItem key="navigationItem" id="9EM-2v-Qih"/>
                     <connections>
                         <outlet property="convertWeatherMessage" destination="Dha-d9-efV" id="DiL-0h-Jut"/>
-                        <outlet property="enterWeather" destination="Yqn-kD-SHs" id="E3q-Cq-Hgt"/>
-                        <outlet property="enterWeatherHere" destination="pKR-0l-aaw" id="G6p-eU-Sa6"/>
+                        <outlet property="enterWeatherHere" destination="Yqn-kD-SHs" id="wqX-Yy-Lba"/>
                         <outlet property="menuTitleTwo" destination="9EM-2v-Qih" id="ytS-DI-N8o"/>
                     </connections>
                 </viewController>
@@ -86,10 +85,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Act-zB-FB6">
-                                <rect key="frame" x="16" y="117" width="181" height="167"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="et1-jh-Cxk">
                                 <rect key="frame" x="87" y="510" width="240" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -98,10 +93,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rfG-aS-4Yj">
-                                <rect key="frame" x="205" y="117" width="99" height="167"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0eh-KB-0gq">
                                 <rect key="frame" x="40" y="391" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -131,8 +122,7 @@
                     <navigationItem key="navigationItem" id="Vni-Cw-8hr"/>
                     <connections>
                         <outlet property="firstLabel" destination="mM6-B6-Uk4" id="idK-Bl-4Ga"/>
-                        <outlet property="menuOneTitle" destination="Vni-Cw-8hr" id="dUt-Ic-RR2"/>
-                        <outlet property="profilePicture" destination="Act-zB-FB6" id="xcq-jg-TF8"/>
+                        <outlet property="menuTitleOne" destination="Vni-Cw-8hr" id="vaP-6x-mep"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3LR-6I-ZOq" userLabel="First Responder" sceneMemberID="firstResponder"/>
