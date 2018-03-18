@@ -9,13 +9,35 @@
 import UIKit
 
 class ViewControllerTwo: UIViewController {
-
+    
+    @IBOutlet var menuTitleTwo: UINavigationItem!
+    @IBOutlet var enterWeatherHere: UITextField!
+    @IBOutlet var convertWeatherMessage: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        self.menuTitleTwo.title = "Weather Converter"
+        enterWeatherHere.placeholder = "Enter Degrees Fahrenheit Here"
+        self.enterWeatherHere.text = ""
+        self.convertWeatherMessage.text = ""
     }
 
+    @IBAction func convertButtonPressed(_ sender: Any) {
+        var userInput: Float
+        userInput = Float(enterWeatherHere.text!)!
+        var x:String
+        x = String((userInput - 32) * 5/9)
+        self.convertWeatherMessage.text = "Today is \(x) degrees Celsius"
+        
+    }
+    
+    
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

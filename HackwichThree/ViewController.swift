@@ -10,7 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
+
     @IBOutlet weak var firstLabel: UILabel!
+    @IBOutlet var menuTitleOne: UINavigationItem!
     
     
     override func viewDidLoad() {
@@ -18,8 +20,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     
    self.firstLabel.text = "About"
-    
-    
+        self.menuTitleOne.title = "About Me"
     }
 
     override func didReceiveMemoryWarning() {

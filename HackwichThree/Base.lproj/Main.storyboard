@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5yY-vI-E2R">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,32 +15,54 @@
             <objects>
                 <viewController id="ojn-RU-hW4" customClass="ViewControllerTwo" customModule="HackwichThree" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pKR-0l-aaw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Degrees Fahrenheit" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Yqn-kD-SHs">
+                                <rect key="frame" x="29" y="170" width="263" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dha-d9-efV">
-                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <rect key="frame" x="139" y="322" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGE-wU-kWJ">
+                                <rect key="frame" x="84" y="226" width="153" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Convert"/>
+                                <connections>
+                                    <action selector="convertButtonPressed:" destination="ojn-RU-hW4" eventType="touchUpInside" id="Ohu-eY-SAk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="TdU-d0-bh3"/>
                     </view>
                     <navigationItem key="navigationItem" id="9EM-2v-Qih"/>
+                    <connections>
+                        <outlet property="convertWeatherMessage" destination="Dha-d9-efV" id="DiL-0h-Jut"/>
+                        <outlet property="enterWeather" destination="Yqn-kD-SHs" id="E3q-Cq-Hgt"/>
+                        <outlet property="enterWeatherHere" destination="pKR-0l-aaw" id="G6p-eU-Sa6"/>
+                        <outlet property="menuTitleTwo" destination="9EM-2v-Qih" id="ytS-DI-N8o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gWl-Td-kFw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="953" y="242"/>
+            <point key="canvasLocation" x="952.5" y="241.90140845070422"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="EDk-Pe-uwe">
             <objects>
                 <viewController id="fa1-4r-GaA" customClass="ViewController" customModule="HackwichThree" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uRK-jG-Laf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mM6-B6-Uk4">
@@ -72,11 +94,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Act-zB-FB6">
-                                <rect key="frame" x="20" y="117" width="240" height="188"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rfG-aS-4Yj">
-                                <rect key="frame" x="283" y="117" width="119" height="188"/>
+                                <rect key="frame" x="16" y="117" width="181" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="et1-jh-Cxk">
@@ -87,6 +105,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rfG-aS-4Yj">
+                                <rect key="frame" x="205" y="117" width="99" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="ktM-ky-QGb"/>
@@ -94,11 +116,13 @@
                     <navigationItem key="navigationItem" id="Vni-Cw-8hr"/>
                     <connections>
                         <outlet property="firstLabel" destination="mM6-B6-Uk4" id="idK-Bl-4Ga"/>
+                        <outlet property="menuOneTitle" destination="Vni-Cw-8hr" id="dUt-Ic-RR2"/>
+                        <outlet property="profilePicture" destination="Act-zB-FB6" id="xcq-jg-TF8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3LR-6I-ZOq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="953.62318840579712" y="-423.09782608695656"/>
+            <point key="canvasLocation" x="952.5" y="-423.59154929577466"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="naq-aj-Lk7">
@@ -112,6 +136,7 @@
                     <connections>
                         <segue destination="pXa-k5-fWk" kind="relationship" relationship="viewControllers" id="HwJ-Yb-Zwn"/>
                         <segue destination="Mj6-eB-HBI" kind="relationship" relationship="viewControllers" id="n2l-sT-YQD"/>
+                        <segue destination="mPK-8v-az8" kind="relationship" relationship="viewControllers" id="KUN-xE-sKz"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IdN-Js-cCE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -122,10 +147,10 @@
         <scene sceneID="BGc-sG-lOh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pXa-k5-fWk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="About Me" image="about" id="1Tv-LO-euJ"/>
+                    <tabBarItem key="tabBarItem" title="About Me" image="сontacts" id="1Tv-LO-euJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kro-4E-Wey">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -141,10 +166,10 @@
         <scene sceneID="1yX-wo-BEF">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mj6-eB-HBI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Weather" image="face_ID" id="I65-QR-GGT"/>
+                    <tabBarItem key="tabBarItem" title="Weather" image="sun" id="I65-QR-GGT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oZ9-lf-cVt">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -156,9 +181,45 @@
             </objects>
             <point key="canvasLocation" x="168" y="241.97901049475263"/>
         </scene>
+        <!--View Controller Three-->
+        <scene sceneID="mRi-xp-6rx">
+            <objects>
+                <viewController id="tV0-ZP-5Go" customClass="ViewControllerThree" customModule="HackwichThree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lrz-de-Q7b">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fQm-nF-2Ql"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0Ux-hW-cvL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ocq-Zp-Gyk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="953" y="1150"/>
+        </scene>
+        <!--Bucket List-->
+        <scene sceneID="S9Y-l0-jlA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mPK-8v-az8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Bucket List" image="list" id="8Tg-cZ-bMf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="m74-rd-sOY">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tV0-ZP-5Go" kind="relationship" relationship="rootViewController" id="eTP-sJ-f9z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F6S-CE-rg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="167" y="1150"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="about" width="30" height="30"/>
-        <image name="face_ID" width="30" height="30"/>
+        <image name="list" width="30" height="30"/>
+        <image name="sun" width="30" height="30"/>
+        <image name="сontacts" width="30" height="30"/>
     </resources>
 </document>
