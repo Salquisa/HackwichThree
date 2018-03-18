@@ -15,7 +15,6 @@
 		7FA13AE22028EAA200FE419A /* HackwichThreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA13AE12028EAA200FE419A /* HackwichThreeTests.swift */; };
 		7FA13AED2028EAA200FE419A /* HackwichThreeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA13AEC2028EAA200FE419A /* HackwichThreeUITests.swift */; };
 		7FA13AFB2028F22B00FE419A /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA13AFA2028F22B00FE419A /* ViewControllerTwo.swift */; };
-		92484D8C205E273900194ADE /* ViewControllerThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92484D8B205E273900194ADE /* ViewControllerThree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +49,6 @@
 		7FA13AEC2028EAA200FE419A /* HackwichThreeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackwichThreeUITests.swift; sourceTree = "<group>"; };
 		7FA13AEE2028EAA300FE419A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FA13AFA2028F22B00FE419A /* ViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
-		92484D8B205E273900194ADE /* ViewControllerThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerThree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +102,6 @@
 				7FA13ACC2028EAA200FE419A /* AppDelegate.swift */,
 				7FA13ACE2028EAA200FE419A /* ViewController.swift */,
 				7FA13AD02028EAA200FE419A /* Main.storyboard */,
-				92484D8B205E273900194ADE /* ViewControllerThree.swift */,
 				7FA13AFA2028F22B00FE419A /* ViewControllerTwo.swift */,
 				7FA13AD32028EAA200FE419A /* Assets.xcassets */,
 				7FA13AD52028EAA200FE419A /* LaunchScreen.storyboard */,
@@ -268,7 +265,6 @@
 				7FA13ACF2028EAA200FE419A /* ViewController.swift in Sources */,
 				7FA13ACD2028EAA200FE419A /* AppDelegate.swift in Sources */,
 				7FA13AFB2028F22B00FE419A /* ViewControllerTwo.swift in Sources */,
-				92484D8C205E273900194ADE /* ViewControllerThree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
