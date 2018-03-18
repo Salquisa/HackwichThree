@@ -151,6 +151,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profilePicture" translatesAutoresizingMaskIntoConstraints="NO" id="bJ1-Xm-zkc">
+                                <rect key="frame" x="60" y="122" width="116" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UHWOLogo" translatesAutoresizingMaskIntoConstraints="NO" id="teZ-3H-6py">
+                                <rect key="frame" x="184" y="119" width="105" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="ktM-ky-QGb"/>
@@ -249,7 +257,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="UHWOLogo" width="783" height="874"/>
         <image name="list" width="30" height="30"/>
+        <image name="profilePicture" width="1208" height="1208"/>
         <image name="sun" width="30" height="30"/>
         <image name="сontacts" width="30" height="30"/>
     </resources>
