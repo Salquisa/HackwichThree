@@ -56,10 +56,10 @@
             </objects>
             <point key="canvasLocation" x="952.5" y="241.90140845070422"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Three-->
         <scene sceneID="aat-BU-fh0">
             <objects>
-                <viewController id="vZP-WT-tZu" sceneMemberID="viewController">
+                <viewController id="vZP-WT-tZu" customClass="ViewControllerThree" customModule="HackwichThree" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2FV-lM-ZSg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,6 +67,9 @@
                         <viewLayoutGuide key="safeArea" id="Ki8-Vw-jCo"/>
                     </view>
                     <navigationItem key="navigationItem" id="gNv-5H-wod"/>
+                    <connections>
+                        <outlet property="menuTitleThree" destination="gNv-5H-wod" id="bea-uP-EAp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g81-Gx-nZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
