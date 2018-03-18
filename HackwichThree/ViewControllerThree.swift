@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewControllerThree: UIViewController, UITableViewDataSource, UITabBarDelegate {
+class ViewControllerThree: UIViewController {
     @IBOutlet var menuTitleThree: UINavigationItem!
     @IBOutlet var tableView: UITableView!
     var bucketListArray = ["Visit Japan", "Take pictures at the Urban Lights in Los Angeles", "Go on a roadtrip", "Go camping in a National Park", "Visit Paris with loved one"]
